@@ -9,6 +9,9 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // router.
+app.get('/',(req,res)=> {
+    res.send("welcome to my back end project...");
+})
 app.get('/movie',(req,res) => {
     res.send("movies from server...");
 });
